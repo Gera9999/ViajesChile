@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- PAGINA SE VE BIEN DESDE VSC EN EL EXPLORADOR, PERO EN GITHUB PAGES NO. SE HACEN VARIAS CORRECCIONES E INTENTOS SIN RESULTADOS :C-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Autor" content="Gerardo Benavente">
-    <title>Viajes</title>
+    <title>Viajes Chile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,10 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap"
         rel="stylesheet">
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu título</title>
+    <title>Viajes Chile</title>
     <!-- Incluye los estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Incluye jQuery -->
@@ -24,7 +24,8 @@
     <!-- Incluye Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
     <!-- Incluye los archivos JavaScript de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -36,12 +37,13 @@
         <nav class="navbar cabeza navbar-expand-lg fixed-top">
             <div class="container marca">
                 <a class="navbar-brand" href="#">
-<i></i>
-<span style="display: inline-flex; align-items: center;">
-    <img src="assets/img/viajes.svg" alt="Favicon" width="16" height="16" style="margin-right: 5px;">
-    <span style="font-size: 1rem;">Viajes Chile</span>
-  </span>
-  
+                    <i></i>
+                    <span style="display: inline-flex; align-items: center;">
+                        <img src="assets/img/viajes.svg" alt="Favicon" width="16" height="16"
+                            style="margin-right: 5px;">
+                        <span style="font-size: 1rem;">Viajes Chile</span>
+                    </span>
+
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,16 +54,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
+                            <a class="nav-link" href="#inicio">Inicio </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#quienes somos">Quienes Somos</a>
+                            <a class="nav-link" href="#quienes-somos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="formularioContacto" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -97,15 +99,17 @@
             </button>
         </div>
     </header>
-    <div class="blanco" style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+
+
+    <div id="quienes-somos" class="blanco" style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
         <h1 class="blanco">¿QUIENES SOMOS?</h1>
     </div>
 
+    <hr class="linea">
 
 
 
-
-
+<!-- TARJETAS-->
 
 
     <div class="card-group" style="border-left: 100px solid black; border-right: 100px solid black;">
@@ -169,29 +173,35 @@
             </div>
         </div>
 
-
+<!--TARJETAS-->
+<!-- DeSTACADOS-->
     </div>
 
-    <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <div id="destacados" style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
         <h1 class="blanco">DESTACADOS</h1>
         <HR>
     </div>
 
+    <!--linea-->
+    <hr class="linea">
     <style>
         .card {
-            margin-bottom: 20px; /* Puedes ajustar el valor según tus necesidades */
+            margin-bottom: 20px;
+            /* Puedes ajustar el valor según tus necesidades */
         }
-        
+
         .card-img-top {
-            padding: 10px; /* Ajusta el valor del relleno según tus preferencias */
+            padding: 10px;
+            /* Ajusta el valor del relleno según tus preferencias */
         }
+        /*Intentando reducir los bordes para que no se vean tan pegados*/
     </style>
     <div class="card-group " style="border-left: 100px solid black; border-right: 100px solid black;">
         <div class="card">
             <img src="assets/img/card1.jpg" class="card-img-top" alt="..." style="width: 100%; height: 200px;">
             <div class="card-body">
                 <!-- assets/img/card1.jpg
-https://github.com/Gera9999/ViajesChile/blob/master/assets/img/card1.jpg -->
+https://github.com/Gera9999/ViajesChile/blob/master/assets/img/card1.jpg Intentando que se vea en GITHUB PAGES-->
                 <p class="card-text" style="background-color: rgb(14, 202, 240);">This is a wider card with supporting
                     text below as a natural lead-in to additional
                     content. This card has even longer content than the first to show that equal height action.This is a
@@ -238,8 +248,11 @@ https://github.com/Gera9999/ViajesChile/blob/master/assets/img/card1.jpg -->
     </div>
 
 
+    <div id="contacto" class="blanco" style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+        <h1 class="blanco">CONTACTO</h1>
 
-
+    </div>
+    <hr class="linea">
     <form style="border-left: 100px solid black; border-right: 100px solid black;">
         <div class="form-group">
             <label for="exampleInputEmail1">NOMBRE</label>
@@ -259,43 +272,52 @@ https://github.com/Gera9999/ViajesChile/blob/master/assets/img/card1.jpg -->
 
 
     </form>
-
+<!--Viajes Chile footer-->
     <section class="container-fluid d-none d-sm-none d-md-block py-5" id="Ahora-aceptamos"
-    style="background-color: rgb(14, 202, 240);">
-    <div class="container">
-        <div class="row">
-            <div class="col-5">
-                <h2 class="text-light fw-bold display-5">
-                    VIAJES CHILE
-                </h2>
-            </div>
-            <div class="col-7 d-flex justify-content-end">
-                <div class="row text-light">
-                    <div class="col-2" style="margin-right: 10px;">
-                        <i class="fa-brands fa-github fa-2x"></i>
-                    </div>
-                    <div class="col-2" style="margin-right: 10px;">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                    </div>
-                    <div class="col-2" style="margin-right: 10px;">
-                        <i class="fa-brands fa-twitter fa-2x"></i>
-                    </div>
-                    <div class="col-2">
-                        <i class="fa-brands fa-facebook fa-2x"></i>
+        style="background-color: rgb(14, 202, 240);"> <!-- se busca el codigo rgb exacto del color-->
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h2 class="text-light fw-bold display-5">
+                        VIAJES CHILE
+                    </h2>
+                </div>
+                <div class="col-7 d-flex justify-content-end">
+                    <div class="row text-light">
+                        <div class="col-2" style="margin-right: 10px;">
+                            <i class="fa-brands fa-github fa-2x"></i>
+                        </div>
+                        <div class="col-2" style="margin-right: 10px;">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </div>
+                        <div class="col-2" style="margin-right: 10px;">
+                            <i class="fa-brands fa-twitter fa-2x"></i>
+                        </div>
+                        <div class="col-2">
+                            <i class="fa-brands fa-facebook fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+<!--fin viajes chile footer-->
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Smooth scroll al hacer clic en el enlace de contacto
+            $("a[href='#contacto']").click(function () {
+                $('html, body').animate({
+                    scrollTop: $('#formularioContacto').offset().top
+                }, 1000); // Duración del scroll en milisegundos
+            });
+        });
+    </script>
 
 
-    <!--jQuery 3.3.1 sin slim-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-       
     <!--Popper JS 1.14.3-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
@@ -308,16 +330,7 @@ https://github.com/Gera9999/ViajesChile/blob/master/assets/img/card1.jpg -->
 
     <!--Mi script-->
     <script src="/assets/js/script.js"></script>
-    <script>
-        $(document).ready(function(){
-            // Smooth scroll al hacer clic en el enlace de contacto
-            $("a[href='#contacto']").click(function() {
-                $('html, body').animate({
-                    scrollTop: $('#formularioContacto').offset().top
-                }, 1000); // Duración del scroll en milisegundos
-            });
-        });
-    </script>
+
 </body>
 
 </html>

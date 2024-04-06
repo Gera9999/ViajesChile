@@ -6,6 +6,7 @@ body {
 }
 .enviar { 
     background-color: aqua;
+    
 }
 
 .card {
@@ -59,12 +60,6 @@ header {
     padding-top: 13.5px;
 }
 
-.receta {
-    padding-top: 40px !important;
-    padding-left: 37px;
-    padding-right: 37px;
-    background-color: #ffffff;
-}
 
 h1 {
     font-size: 25px;
@@ -247,11 +242,6 @@ footer {
     padding-top: 41px;
 }
 
-footer p {
-    margin: 0px;
-    padding: 0px;
-    height: 46px;
-}
 
 @media (min-width: 1280px) {
     div.container.marca:first-of-type {
@@ -413,59 +403,22 @@ footer p {
         padding-bottom: 197px;
     }
 
-    .news {
-        width: 980px;
+    .card {
+        margin-bottom: 20px; /* Puedes ajustar el valor según tus necesidades */
     }
-
-    h2.suscribete {
-        font-size: 40px !important;
-        font-weight: bold;
-        margin-top: 0px;
-        margin-bottom: 7px;
+    
+    .card-img-top {
+        margin-right: 10px; /* Espacio entre las imágenes */
     }
-
-    .newsletter h3 {
+    }
+    .linea {
+        display: block;
         width: 100%;
-        font-family: "Cabin", sans-serif;
-        font-size: 30px !important;
-        font-weight: normal;
-        margin-bottom: 39.5px !important;
-        text-decoration: none;
-        border-bottom: 0px !important;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        color: rgb(14, 202, 240);
+        background: rgb(14, 202, 240);
     }
-
-    .newsletter h3 span {
-        font-size: 30px !important;
-    }
-
-    .newsletter span {
-        font-family: "Lobster", cursive;
-        font-size: 30px;
-    }
-
-    .empezar {
-        width: 233px;
-        padding-left: 90px;
-        padding-right: 90px;
-    }
-
-    footer {
-        width: 100%;
-        height: auto;
-        font-size: 37px;
-        font-family: "Lobster", cursive;
-        text-align: center;
-        margin: 0;
-        color: #ffffff;
-        padding-bottom: 38px;
-        padding-left: 571.5px;
-        padding-right: 571.5px;
-        padding-top: 15px;
-    }
-
-    footer p {
-        margin: 0px;
-        padding: 0px;
-        height: 46px;
-    }
-}
